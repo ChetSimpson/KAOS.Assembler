@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccAuxPath />
+    <SccLocalPath />
+    <SccProvider />
+    <ProjectGuid>{7D70E15B-495C-4314-9CE3-2B40E1FA99CA}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.27130.2020</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_DEBUG;WIN32;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>c:\utils\coco/casm.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;NDEBUG;WIN32;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <TypeLibraryName>.\Release/casm.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\as.c" />
+    <ClCompile Include="src\cmdline.c" />
+    <ClCompile Include="src\context.c" />
+    <ClCompile Include="src\cpu.c" />
+    <ClCompile Include="src\do9.c" />
+    <ClCompile Include="src\error.c" />
+    <ClCompile Include="src\eval.c" />
+    <ClCompile Include="src\export.c" />
+    <ClCompile Include="src\ffwd.c" />
+    <ClCompile Include="src\input.c" />
+    <ClCompile Include="src\label.c" />
+    <ClCompile Include="src\macro.c" />
+    <ClCompile Include="src\output.c" />
+    <ClCompile Include="src\output_bin.c" />
+    <ClCompile Include="src\output_listing.c" />
+    <ClCompile Include="src\output_mod.c" />
+    <ClCompile Include="src\output_obj.c" />
+    <ClCompile Include="src\output_os9.c" />
+    <ClCompile Include="src\output_rof.c" />
+    <ClCompile Include="src\output_rom.c" />
+    <ClCompile Include="src\output_s19.c" />
+    <ClCompile Include="src\parse.c" />
+    <ClCompile Include="src\proc_bitxfer.c" />
+    <ClCompile Include="src\proc_branch.c" />
+    <ClCompile Include="src\proc_direct.c" />
+    <ClCompile Include="src\proc_extended.c" />
+    <ClCompile Include="src\proc_general.c" />
+    <ClCompile Include="src\proc_immediate.c" />
+    <ClCompile Include="src\proc_indexed.c" />
+    <ClCompile Include="src\proc_inherent.c" />
+    <ClCompile Include="src\proc_logicalmem.c" />
+    <ClCompile Include="src\proc_memxfer.c" />
+    <ClCompile Include="src\proc_pushpull.c" />
+    <ClCompile Include="src\proc_regtoreg.c" />
+    <ClCompile Include="src\proc_util.c" />
+    <ClCompile Include="src\pseudo.c" />
+    <ClCompile Include="src\struct.c" />
+    <ClCompile Include="src\symtab.c" />
+    <ClCompile Include="src\table9.c" />
+    <ClCompile Include="src\util.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\as.h" />
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\context.h" />
+    <ClInclude Include="src\cpu.h" />
+    <ClInclude Include="src\error.h" />
+    <ClInclude Include="src\input.h" />
+    <ClInclude Include="src\label.h" />
+    <ClInclude Include="src\macro.h" />
+    <ClInclude Include="src\os9.h" />
+    <ClInclude Include="src\output.h" />
+    <ClInclude Include="src\proc_util.h" />
+    <ClInclude Include="src\proto.h" />
+    <ClInclude Include="src\pseudo.h" />
+    <ClInclude Include="src\struct.h" />
+    <ClInclude Include="src\symtab.h" />
+    <ClInclude Include="src\table9.h" />
+    <ClInclude Include="src\util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HTMLHelp\casm.hhc" />
+    <None Include="HTMLHelp\casm.hhk" />
+    <CustomBuild Include="HTMLHelp\casm.hhp">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Making help file...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">hhc "HTMLHelp\casm.hhp"
+if not exist "HTMLHelp\casm.chm" goto :HelpError
+copy "HTMLHelp\casm.chm" "$(OutDir)casm.chm"
+goto :HelpDone
+:HelpError
+echo HTMLHelp\casm.hhp(1) : error:Problem encountered creating help file
+echo.
+:HelpDone
+echo.
+pause
+</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">HTMLHelp\HTMLDefines.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)casm.chm;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <None Include="HTMLHelp\cmd_line_opts.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_fcb.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_keybd.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_pia.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_rs232.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_ssc.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_a.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_b.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_c.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_d.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_e.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_f.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_g.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_h.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\coco_wd1793.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\gime_info.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\gime_irq.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\gime_mmu.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\gime_regs.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\main_index.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\opcode6309.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\os9_rof.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_align.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_bsz.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_cond.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_else.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_end.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_endc.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_endif.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_endm.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_endp.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ends.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_endsect.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_endstruct.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_equ.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_equalsym.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_even.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_export.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_fcb.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_fcc.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_fcn.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_fcr.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_fcs.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_fdb.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_fill.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_fqb.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_fzb.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_fzd.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_fzq.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_if.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifdef.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifeq.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifge.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifgt.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifle.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_iflt.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifn.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifndef.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifne.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifp1.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifp2.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_import.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_incl.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_include.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_includebin.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_lib.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_macr.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_macro.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_macros.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_mod.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_moreinfo.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_nam.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_name.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_namespace.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_odd.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ops.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_opt.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_org.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_os9.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_pag.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_page.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_popdp.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_psect.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_pushdp.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_raw.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_reorg.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_rmb.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_rmd.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_rmq.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_rzb.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_rzd.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_rzq.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_set.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_setdp.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_spc.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_struct.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_subttl.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_title.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_ttl.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_union.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_use.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_vsect.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_zmb.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_zmd.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\pseudo_zmq.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HTMLHelp\styles.css" />
+    <None Include="tests\expr.asm" />
+    <None Include="tests\import.asm" />
+    <None Include="tests\locals.asm" />
+    <None Include="tests\macro.asm" />
+    <None Include="tests\namespace.asm" />
+    <None Include="tests\phasing.asm" />
+    <None Include="tests\pseudo.asm" />
+    <None Include="tests\regress_ops.asm" />
+    <None Include="tests\regress_ops_small.asm" />
+    <None Include="tests\struct.asm" />
+    <None Include="tests\union.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{19ee925f-38c7-4161-86ed-282a8dbd7294}</UniqueIdentifier>
+      <Extensions>c</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{3a2bcb55-6eab-4167-bd5e-71a24760d650}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{12c8ec54-301c-4a6f-9783-e3a30f61c7dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTMLHelp">
+      <UniqueIdentifier>{c48834cd-7cc4-4bb8-afa7-3a8b9dee2905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTMLHelp\HTML">
+      <UniqueIdentifier>{decc1d41-c80a-4b23-8511-13f41a166501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTMLHelp\HTML\ASM">
+      <UniqueIdentifier>{5e2a2525-aa33-4471-b585-05a226f7e0f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTMLHelp\HTML\ASM\Directives">
+      <UniqueIdentifier>{1f55dffd-70b7-4bfb-a402-a16f496c5165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTMLHelp\HTML\ASM\AddrModes">
+      <UniqueIdentifier>{3a0f0462-8d28-4a10-8666-6f7ab3b3be3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTMLHelp\HTML\6809">
+      <UniqueIdentifier>{7b6faa06-15bb-4af8-972d-bbfa5b8f9da2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTMLHelp\HTML\CoCo">
+      <UniqueIdentifier>{73152fa1-3eb8-4c7f-be49-4e78691c6269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTMLHelp\HTML\Misc">
+      <UniqueIdentifier>{051fe8b6-9f32-4a9a-8438-dc0a92067d70}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\as.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmdline.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\context.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpu.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\do9.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\error.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\eval.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\export.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ffwd.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\label.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\macro.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\output.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\output_bin.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\output_listing.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\output_mod.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\output_obj.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\output_os9.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\output_rof.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\output_rom.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\output_s19.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\parse.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_bitxfer.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_branch.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_direct.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_extended.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_general.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_immediate.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_indexed.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_inherent.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_logicalmem.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_memxfer.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_pushpull.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_regtoreg.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\proc_util.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pseudo.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\struct.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\symtab.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\table9.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\as.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\context.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpu.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\error.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\label.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\macro.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\os9.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\output.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proc_util.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\proto.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pseudo.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\struct.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\symtab.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\table9.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tests\expr.asm">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="tests\import.asm">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="tests\locals.asm">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="tests\macro.asm">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="tests\namespace.asm">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="tests\phasing.asm">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="tests\pseudo.asm">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="tests\regress_ops.asm">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="tests\regress_ops_small.asm">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="tests\struct.asm">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="tests\union.asm">
+      <Filter>Tests</Filter>
+    </None>
+    <None Include="HTMLHelp\casm.hhc">
+      <Filter>HTMLHelp</Filter>
+    </None>
+    <None Include="HTMLHelp\casm.hhk">
+      <Filter>HTMLHelp</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_align.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_bsz.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_cond.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_else.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_end.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_endc.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_endif.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_endm.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_endp.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ends.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_endsect.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_endstruct.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_equ.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_equalsym.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_even.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_export.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_fcb.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_fcc.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_fcn.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_fcr.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_fcs.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_fdb.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_fill.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_fqb.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_fzb.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_fzd.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_fzq.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_if.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifdef.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifeq.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifge.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifgt.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifle.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_iflt.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifn.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifndef.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifne.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifp1.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ifp2.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_import.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_incl.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_include.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_includebin.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_lib.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_macr.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_macro.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_macros.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_mod.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_moreinfo.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_nam.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_name.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_namespace.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_odd.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ops.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_opt.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_org.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_os9.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_pag.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_page.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_popdp.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_psect.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_pushdp.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_raw.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_reorg.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_rmb.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_rmd.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_rmq.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_rzb.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_rzd.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_rzq.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_set.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_setdp.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_spc.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_struct.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_subttl.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_title.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_ttl.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_union.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_use.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_vsect.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_zmb.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_zmd.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\pseudo_zmq.htm">
+      <Filter>HTMLHelp\HTML\ASM\Directives</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_fcb.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_keybd.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_pia.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_rs232.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_ssc.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_a.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_b.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_c.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_d.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_e.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_f.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_g.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_ssc_h.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\coco_wd1793.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\gime_info.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\gime_irq.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\gime_mmu.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\gime_regs.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\opcode6309.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\os9_rof.htm">
+      <Filter>HTMLHelp\HTML\CoCo</Filter>
+    </None>
+    <None Include="HTMLHelp\cmd_line_opts.htm">
+      <Filter>HTMLHelp\HTML\Misc</Filter>
+    </None>
+    <None Include="HTMLHelp\main_index.htm">
+      <Filter>HTMLHelp\HTML\Misc</Filter>
+    </None>
+    <None Include="HTMLHelp\styles.css">
+      <Filter>HTMLHelp\HTML\Misc</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="HTMLHelp\casm.hhp">
+      <Filter>HTMLHelp</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
