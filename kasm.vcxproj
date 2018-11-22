@@ -503,17 +503,6 @@ pause
       <DeploymentContent>true</DeploymentContent>
     </None>
     <None Include="HTMLHelp\styles.css" />
-    <None Include="tests\expr.asm" />
-    <None Include="tests\import.asm" />
-    <None Include="tests\locals.asm" />
-    <None Include="tests\macro.asm" />
-    <None Include="tests\namespace.asm" />
-    <None Include="tests\phasing.asm" />
-    <None Include="tests\pseudo.asm" />
-    <None Include="tests\regress_ops.asm" />
-    <None Include="tests\regress_ops_small.asm" />
-    <None Include="tests\struct.asm" />
-    <None Include="tests\union.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

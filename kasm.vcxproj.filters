@@ -9,9 +9,6 @@
       <UniqueIdentifier>{3a2bcb55-6eab-4167-bd5e-71a24760d650}</UniqueIdentifier>
       <Extensions>h</Extensions>
     </Filter>
-    <Filter Include="Tests">
-      <UniqueIdentifier>{12c8ec54-301c-4a6f-9783-e3a30f61c7dd}</UniqueIdentifier>
-    </Filter>
     <Filter Include="HTMLHelp">
       <UniqueIdentifier>{c48834cd-7cc4-4bb8-afa7-3a8b9dee2905}</UniqueIdentifier>
     </Filter>
@@ -213,39 +210,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="tests\expr.asm">
-      <Filter>Tests</Filter>
-    </None>
-    <None Include="tests\import.asm">
-      <Filter>Tests</Filter>
-    </None>
-    <None Include="tests\locals.asm">
-      <Filter>Tests</Filter>
-    </None>
-    <None Include="tests\macro.asm">
-      <Filter>Tests</Filter>
-    </None>
-    <None Include="tests\namespace.asm">
-      <Filter>Tests</Filter>
-    </None>
-    <None Include="tests\phasing.asm">
-      <Filter>Tests</Filter>
-    </None>
-    <None Include="tests\pseudo.asm">
-      <Filter>Tests</Filter>
-    </None>
-    <None Include="tests\regress_ops.asm">
-      <Filter>Tests</Filter>
-    </None>
-    <None Include="tests\regress_ops_small.asm">
-      <Filter>Tests</Filter>
-    </None>
-    <None Include="tests\struct.asm">
-      <Filter>Tests</Filter>
-    </None>
-    <None Include="tests\union.asm">
-      <Filter>Tests</Filter>
-    </None>
     <None Include="HTMLHelp\casm.hhc">
       <Filter>HTMLHelp</Filter>
     </None>

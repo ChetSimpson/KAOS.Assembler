@@ -1150,6 +1150,17 @@ static void PseudoFCCType(EnvContext *ctx,
 
 	}
 
+	//	CLS-FIXED: Added support for trailing bytes to fix issue with pseudo's like
+	//	FCZ not working correctly.
+	if (trailingBytes)
+	{
+		for (int i = 0; i < trailingCount; ++i)
+		{
+			EmitDataByte(ctx, trailingBytes[i]);
+		}
+	}
+
+
 	ctx->m_Ptr++;
 
 	if(',' == *ctx->m_Ptr)
