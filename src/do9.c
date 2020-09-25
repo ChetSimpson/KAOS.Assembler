@@ -50,6 +50,7 @@ static void ProcGroup2(EnvContext *ctx, const Mneumonic *op)
 {
 	int32		result;
 	ADDR_MODE	mode;
+	bool		status;
 
 	/* pickup indicated addressing mode */
 	mode = GetAddrMode(ctx);
@@ -66,7 +67,19 @@ static void ProcGroup2(EnvContext *ctx, const Mneumonic *op)
 		return;
 	}
 
-	Evaluate(ctx, &result, EVAL_NORMAL, NULL);
+	status = Evaluate(ctx, &result, EVAL_NORMAL, NULL);
+
+	if (ctx->m_Pass == 2 && mode == EXTENDED && op->opcode == 0x0E)
+	{
+		int		dist;
+
+		dist = (int)result - (GetPCReg() + 2);
+		if(dist >= MIN_BYTE && dist <= MAX_BYTE)
+		{
+			ctx->m_OptimizeLine = true;
+		}
+	}
+
 
 	if(true == ctx->m_ForceByte || (false == ctx->m_ForceWord && true == IsAddressInDirectPage(loword(result))))
 	{

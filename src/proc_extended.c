@@ -59,6 +59,17 @@ void ProcExtended(EnvContext *ctx, const Mneumonic *op)
 	}
 
 
+	if (ctx->m_Pass == 2 && op->opcode == 0x8D)
+	{
+		int		dist;
+
+		dist = (int)result - (GetPCReg() + 3);
+		if(dist >= MIN_BYTE && dist <= MAX_BYTE)
+		{
+			ctx->m_OptimizeLine = true;
+		}
+	}
+
 	if(true == ctx->m_ForceByte)
 	{
 		ASSERTX(false == ctx->m_ForceWord);

@@ -257,7 +257,7 @@ static void AssembleFile(EnvContext *ctx, const char *np)
 							}
 						}
 
-						PrintLine(ctx, lineBuffer.m_Line, comment);
+						PrintLine(ctx, NULL, lineBuffer.m_Line, comment);
 
 					}
 				}
@@ -266,7 +266,7 @@ static void AssembleFile(EnvContext *ctx, const char *np)
 					if(ctx->m_Misc.OptShow == true)
 					{
 						warning(ctx, WARN_OPTIMIZE, "!!Optimization alert!! ");
-						PrintLine(ctx, lineBuffer.m_Line, false);
+						PrintLine(ctx, GetCurrentFilePathname(), lineBuffer.m_Line, false);
 					}
 					OptCount++;
 				}

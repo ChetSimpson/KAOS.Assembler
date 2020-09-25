@@ -13,7 +13,7 @@
 /*----------------------------------------------------------------------------
 	PrintLine --- pretty print input line
 ----------------------------------------------------------------------------*/
-void PrintLine(EnvContext *ctx, const char *lineBuffer, bool forceComment)
+void PrintLine(EnvContext *ctx, const char* filename, const char *lineBuffer, bool forceComment)
 {
 	int			i;
 	const char	*ptr;
@@ -24,6 +24,11 @@ void PrintLine(EnvContext *ctx, const char *lineBuffer, bool forceComment)
 	if(true == forceComment)
 	{
 		return;
+	}
+
+	if (filename)
+	{
+		fprintf(stdout, "%s\n", filename);
 	}
 
 	if(ctx->m_OptimizeLine == true)

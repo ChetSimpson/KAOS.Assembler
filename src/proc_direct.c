@@ -20,9 +20,14 @@ void ProcDirect(EnvContext *ctx, const Mneumonic *op)
 
 	EmitOpCode(ctx, op, 0x10);
 	Evaluate(ctx, &result, EVAL_NORMAL, NULL);
-	if(result > 0xff)
+	if(/*result > 0xff && */((result >> 8) & 0xff) != GetDPReg())
 	{
-		warning(ctx, WARN_VALUE_TRUNCATED, "value out of range for direct addressing mode");
+		warning(
+			ctx,
+			WARN_VALUE_TRUNCATED,
+			"value %04X out of range for direct addressing mode. DP = %02X",
+			result,
+			GetDPReg());
 	}
 
 	EmitOpDataByte(ctx, lobyte(result));

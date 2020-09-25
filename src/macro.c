@@ -249,7 +249,7 @@ void EndMacro(EnvContext *ctx)
 }
 
 
-void AddLineToMacro(EnvContext *ctx, const char *macroline)
+void AddLineToMacro(EnvContext *ctx, const char *newMacroLine)
 {
 
 	/* FIXME
@@ -283,7 +283,7 @@ void AddLineToMacro(EnvContext *ctx, const char *macroline)
 	}
 
 	curmacLine->m_Next = NULL;
-	strcpy(curmacLine->m_Line, macroline);
+	strcpy(curmacLine->m_Line, newMacroLine);
 }
 
 

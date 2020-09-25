@@ -92,7 +92,7 @@ void EmitUninitData(EnvContext *ctx, const u_int16 size);
 bool OpenOutput(EnvContext *ctx, const char *name, const bool forceExt);
 void FlushOutput(EnvContext *ctx);
 void CloseOutput(EnvContext *ctx);
-void PrintLine(EnvContext *ctx, const char *lineBuffer, const bool forceComment);
+void PrintLine(EnvContext *ctx, const char* filename, const char *lineBuffer, const bool forceComment);
 void PrintCycles(EnvContext *ctx, const int cycles);
 
 

@@ -120,10 +120,10 @@ void error(EnvContext *ctx, ERROR_NUMBER errnum, const char *str, ...)
 
 	if(ctx->m_ErrorCount > MAX_ERRORS)
 	{
-		va_list list;
+		va_list args;
 
-		va_start(list, str);
-		dofatal(ctx, CRITICAL_ERRORS, "Too many errors.  Stopping assembly", list);
+		va_start(args, str);
+		dofatal(ctx, CRITICAL_ERRORS, "Too many errors.  Stopping assembly", args);
 	}
 }
 
